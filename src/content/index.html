@@ -39,7 +39,7 @@
     <img class="header_pic" src="" alt="my_pic.">
     <section class="header_title"></section>
     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima quae error harum, eaque officiis mollitia, similique ipsam sed facere sequi ratione doloribus eum nisi nostrum voluptate nihil ab inventore.</h1>
-    <p class="header_paragraph"> Lorem ipsum dolor sit amet consectetur, <a class="header_link" href="#My_skills">my skills</a> adipisicing elit. Vero incidunt corrupti nam quod, ipsum iure sint explicabo aut suscipit nesciunt illo vitae, eius doloremque, <a class="header_link" href="#Recent_projects">my projects</a> dolores expedita repellendus ex eaque voluptate.<a class="header_link" href="#">LINK</a></p>
+    <p class="header_paragraph"> Lorem ipsum dolor sit amet consectetur, <a class="header_link" href="#My_skills">my skills</a> adipisicing elit. Vero incidunt corrupti nam quod, ipsum iure sint explicabo aut suscipit nesciunt illo vitae, eius doloremque, <a class="header_link" href="#Recent_projects">my projects</a> dolores expedita repellendus ex eaque voluptate.<a class="header_link" href="#contact">contact me</a></p>
 
     <a class="header_mail" href="mailto:mrozik.p@gmail.com">mrozik.p@gmail.com</a>
 
@@ -92,9 +92,10 @@
 
     <section class="Projects_section">
 
-      <h2 id="Recent_projects" class="section_title">Recent projects</h2>
+      <h2 id="Recent_projects" class="project_title">Recent projects</h2>
 
-      <p class="header_paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates reiciendis libero aperiam obcaecati vel, debitis quos perferendis corrupti quisquam reprehenderit ad asperiores facere fuga modi ipsum sint earum quidem sit.</p>
+      <p class="project_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates reiciendis libero aperiam obcaecati vel, debitis quos perferendis corrupti quisquam reprehenderit ad asperiores facere fuga modi ipsum sint earum quidem sit.</p>
+
 
       <section class="cards">
         <div class="card">
@@ -105,7 +106,7 @@
 
           <div class="card__footer">
             <a  class="card__link" href="#" title="Demo:">Demo</a>
-            <a class="card__link" href="#">GitHub</a>
+            <a class="card__link" href="#" title="Source code">GitHub</a>
           </div>
 
         </div>
@@ -115,22 +116,12 @@
           <h4 class="card__header">projek title </h4>
           <p class="card__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
-        </div>
-        <div class="card">
-          <img class="card__icon" src="" alt="github_icon.">
+          <div class="card__footer">
+            <a  class="card__link" href="#" title="Demo:">Demo</a>
+            <a class="card__link" href="#" title="Source code">GitHub</a>
+          </div>
 
-          <h4 class="card__header">projek title </h4>
-          <p class="card__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-        </div>
-        <div class="card">
-          <img class="card__icon" src="" alt="github_icon.">
-
-          <h4 class="card__header">projek title </h4>
-
-          <p class="card__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-        </div>
+        
       </section>
     </section>
 
@@ -140,7 +131,17 @@
     </main>
 
 
-    <footer class="footer">to jest stopka</footer>
+    <footer class="contact" id="contact">
+      <h3 class="contact__title">Contact</h3>
+      <p class="contact__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+      <img class="card__icon" src="" alt="github_icon.">
+      <img class="card__icon" src="" alt="linedin">
+      <a class="contact_mail"href="mailto:mrozik.p@gmail.com">mrozik.p@gmial.com</a>
+
+
+
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
