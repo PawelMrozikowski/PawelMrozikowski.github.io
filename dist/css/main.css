@@ -310,7 +310,7 @@ template {
 
 .header {
   max-width: 1184px;
-  padding: 112px 0 200px;
+  padding: 112px 0 120px;
   margin: 0 auto; }
   .header__pic {
     width: 160px;
@@ -335,14 +335,46 @@ template {
   .header__mail {
     color: #0593FB;
     font-weight: 500;
-    text-decoration: none; }
+    -webkit-text-decoration: underline red;
+            text-decoration: underline red; }
   .header__link {
     color: #0593FB;
     font-weight: 500; }
 
+.skills__content {
+  max-width: 1184px;
+  margin: 0 auto; }
+  .skills__content__title {
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    border-bottom: 2px solid #303235; }
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 8rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .skills__subtitle {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    margin: 0; }
+    .skills__subtitle::before {
+      content: '* * *';
+      display: block; }
+  .skills__list {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 2.5rem; }
+
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -351,7 +383,14 @@ html {
 body {
   font-size: 16px;
   border: 16px solid #171F3F;
-  background: #E7E7E4;
+  background: #fafafa;
+  background: #fafafa;
+  background: #fafafa;
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(91%, #fafafa), to(#8695b0));
+  background: -webkit-linear-gradient(top, #fafafa 91%, #8695b0 100%);
+  background: -o-linear-gradient(top, #fafafa 91%, #8695b0 100%);
+  background: linear-gradient(180deg, #fafafa 91%, #8695b0 100%);
   color: #171F3F;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;

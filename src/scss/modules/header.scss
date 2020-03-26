@@ -1,6 +1,6 @@
 .header {
   max-width: 1184px;
-  padding: 112px 0 200px;
+  padding: 112px 0 120px;
   margin: 0 auto;
 
 
@@ -34,7 +34,7 @@
   &__mail {
     color: $blue;
     font-weight: 500;
-    text-decoration: none;
+    text-decoration: underline red;
   }
 
   &__link {

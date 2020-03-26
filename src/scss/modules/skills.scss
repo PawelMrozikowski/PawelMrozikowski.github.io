@@ -1,0 +1,38 @@
+.skills__content {
+  max-width: 1184px;
+  margin: 0 auto;
+  
+
+  &__title {
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    border-bottom: 2px solid $gray;
+    
+  }
+}
+
+.skills {
+    display: flex;
+    padding-bottom: 8rem;
+    justify-content: space-between;
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    margin: 0;
+
+    &::before {
+        content: '* * *';
+        display: block;
+    }
+  }
+
+  &__list {
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 2.5rem;
+  }
+}
