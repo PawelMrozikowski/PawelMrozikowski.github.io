@@ -17,7 +17,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
-    margin: 3rem 8rem ;
+    margin: .5rem 8rem ;
     background: linear-gradient(126deg, rgba(234,244,255,1) 0%, rgba(218,220,223,1) 100%);
     
     
@@ -26,20 +26,28 @@
     font-weight: 600;
     font-size: 2rem;
     line-height: 2.75rem;
-    margin: 0;
   }
 
 
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5%;
     font-weight: normal;
     font-size: 18px;
     line-height: 2.5rem;
-    list-style: square;
     padding: 1rem;
+    list-style-image: url('/assets/img/square.svg');
+    column-gap: 1.5rem;
+
+    
   }
+
+  
+
+  
+
 }
+
+
 
 
