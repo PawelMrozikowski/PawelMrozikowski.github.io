@@ -1,5 +1,27 @@
-$cararra: #E7E7E4;
+
 $big-stone: #171F3F;
-$black: #000;
 $gray: rgb(48, 50, 53);
 $blue: #0593FB;
+$light-gray: #52606D;
+$max-width: 1184px;
+
+@mixin title {
+    font-weight: 37.5rem;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    
+}
+
+@mixin paragraph {
+    
+    color: $light-gray;
+    max-width: 600px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 2.26rem;
+    margin-bottom: 64px;
+    font-weight: normal;
+}
+
+
+

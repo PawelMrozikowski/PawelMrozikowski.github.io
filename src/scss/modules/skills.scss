@@ -1,14 +1,14 @@
 .skills__content {
-  max-width: 1184px;
+  max-width: $max-width;
   margin: 0 auto;
+  padding-bottom: 8rem;
   
 
   &__title {
-    font-weight: 600;
-    font-size: 2.25rem;
-    line-height: 3rem;
-    border-bottom: 2px solid $gray;
+    @include title;
     margin-bottom: 8rem;
+    border-bottom: 2px solid $gray;
+    
     
   }
 }

@@ -22,13 +22,8 @@
   }
 
   &__paragraph {
-    max-width: 680px;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 2.26rem;
-    margin-bottom: 46px;
-    color: $gray;
-    font-weight: normal;
+    @include paragraph;
+    
   }
 
   &__mail {

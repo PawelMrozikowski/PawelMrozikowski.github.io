@@ -1,0 +1,102 @@
+.projects {
+    background: linear-gradient(126deg, rgba(234, 244, 255, 1) 0%, rgba(218, 220, 223, 1) 100%);
+    padding: 8rem 0;
+
+    &__title {
+        @include title;
+        max-width: $max-width;
+        margin: 0 auto;
+    }
+
+    &__description {
+        @include paragraph;
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+     
+    background: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+    overflow: hidden;
+
+    &__icon {
+        padding: 2rem 2rem 1rem;
+    }
+
+    &__header {
+        padding-left: 2rem;
+        
+    }
+
+    &__paragraph {
+        padding: 0.5rem 2rem 2.5rem;
+    }
+
+    &__footer {
+        height: 4rem;
+        background: #f5f7fa;
+        padding: 1rem 3rem;
+        text-align: right;
+        
+        
+
+        &-link {
+            color: $blue;
+            margin-left: 50px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            text-decoration: none;
+            display: inline;
+            position: relative;
+            
+            & + & {
+
+                &::after {
+                    content: ' ';
+                    width: 2px;
+                    height: 32px;
+                    background: #CBD2D9;
+                    position: absolute;
+                    left: -26px;
+                    pointer-events: none;
+                }
+            }
+           
+    
+                &::before {
+                content:'';
+                display: inline-block;
+                padding: 8px;
+                margin-right: 4px;
+                transform: translateY(6px);
+                width: 24px;
+                height: 24px;
+                background: url('/assets/img/demo.svg');
+            }
+
+            &--source::before {
+                background: url('/assets/img/code_icon.svg');
+
+            }
+
+            &:hover {
+                border-bottom: 1px solid $blue;
+                font-style: oblique;
+                
+            }
+
+               
+                
+                
+            }
+        }
+    }
+
