@@ -1,0 +1,59 @@
+.contact {
+    background: $big-stone;
+    color: $sky;
+    padding-bottom: 8rem;
+
+
+    &__title {
+        @include title;
+        border-bottom: 1px solid;
+        padding: 4rem 0 1rem;
+     
+    }
+
+    &__description {
+        @include paragraph;
+        color: $sky;
+    }
+
+    .social__content {
+        font-size: 1.25rem;
+        margin: 0 8rem;
+        display:flex;
+        justify-content: space-between;
+        //align-items: center;
+    }
+    &__me  {
+        //color: $sky;
+        color:$sky;
+        text-decoration: none;
+        position: relative;
+        
+        
+        & + & {
+
+                &::after {
+                    content: ' ';
+                    width: 1px;
+                    height: 18px;
+                    left: -5rem;
+                    
+                    background: $sky;
+                    position: absolute;
+                    pointer-events: none;
+                    
+        }  
+        }
+
+        &:hover {
+            
+           text-decoration: underline;
+        }
+
+
+    }
+
+    
+    }
+
+

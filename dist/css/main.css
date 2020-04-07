@@ -349,6 +349,8 @@ template {
     font-weight: 37.5rem;
     font-size: 2.25rem;
     line-height: 3rem;
+    max-width: 1184px;
+    margin: 0 auto 1rem;
     margin-bottom: 8rem;
     border-bottom: 2px solid #303235; }
 
@@ -389,6 +391,8 @@ template {
     font-weight: 37.5rem;
     font-size: 2.25rem;
     line-height: 3rem;
+    max-width: 1184px;
+    margin: 0 auto 1rem;
     max-width: 1184px;
     margin: 0 auto; }
   .projects__description {
@@ -456,7 +460,52 @@ template {
         background: url("/assets/img/code_icon.svg"); }
       .card__footer-link:hover {
         border-bottom: 1px solid #0593FB;
-        font-style: oblique; }
+        font-style: italic; }
+
+.contact {
+  background: #171F3F;
+  color: #eaf4ff;
+  padding-bottom: 8rem; }
+  .contact__title {
+    font-weight: 37.5rem;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    max-width: 1184px;
+    margin: 0 auto 1rem;
+    border-bottom: 1px solid;
+    padding: 4rem 0 1rem; }
+  .contact__description {
+    color: #52606D;
+    max-width: 600px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 2.26rem;
+    margin-bottom: 64px;
+    font-weight: normal;
+    color: #eaf4ff; }
+  .contact .social__content {
+    font-size: 1.25rem;
+    margin: 0 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .contact__me {
+    color: #eaf4ff;
+    text-decoration: none;
+    position: relative; }
+    .contact__me + .contact__me::after {
+      content: ' ';
+      width: 1px;
+      height: 18px;
+      left: -5rem;
+      background: #eaf4ff;
+      position: absolute;
+      pointer-events: none; }
+    .contact__me:hover {
+      text-decoration: underline; }
 
 html {
   -webkit-box-sizing: border-box;

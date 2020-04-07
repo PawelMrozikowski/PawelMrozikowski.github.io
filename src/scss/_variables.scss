@@ -1,5 +1,6 @@
 
 $big-stone: #171F3F;
+$sky:  #eaf4ff;
 $gray: rgb(48, 50, 53);
 $blue: #0593FB;
 $light-gray: #52606D;
@@ -9,6 +10,8 @@ $max-width: 1184px;
     font-weight: 37.5rem;
     font-size: 2.25rem;
     line-height: 3rem;
+    max-width:$max-width;
+    margin: 0 auto 1rem;
     
 }
 
