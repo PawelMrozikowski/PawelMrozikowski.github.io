@@ -4,13 +4,14 @@ $sky:  #eaf4ff;
 $gray: rgb(48, 50, 53);
 $blue: #0593FB;
 $light-gray: #52606D;
-$max-width: 1184px;
+$max-width: 1216px;
 
 @mixin title {
     font-weight: 37.5rem;
     font-size: 2.25rem;
     line-height: 3rem;
     max-width:$max-width;
+    padding: 0 8px;
     margin: 0 auto 1rem;
     
 }
@@ -23,6 +24,7 @@ $max-width: 1184px;
     font-size: 20px;
     line-height: 2.26rem;
     margin-bottom: 64px;
+    padding: 0 8px;
     font-weight: normal;
 }
 

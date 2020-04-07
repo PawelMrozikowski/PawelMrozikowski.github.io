@@ -309,8 +309,8 @@ template {
   display: none; }
 
 .header {
-  max-width: 1184px;
-  padding: 112px 0 120px;
+  max-width: 1216px;
+  padding: 112px 8px 120px;
   margin: 0 auto; }
   .header__pic {
     width: 160px;
@@ -331,6 +331,7 @@ template {
     font-size: 20px;
     line-height: 2.26rem;
     margin-bottom: 64px;
+    padding: 0 8px;
     font-weight: normal; }
   .header__mail {
     color: #0593FB;
@@ -342,17 +343,18 @@ template {
     font-weight: 500; }
 
 .skills__content {
-  max-width: 1184px;
+  max-width: 1216px;
   margin: 0 auto;
   padding-bottom: 8rem; }
   .skills__content__title {
     font-weight: 37.5rem;
     font-size: 2.25rem;
     line-height: 3rem;
-    max-width: 1184px;
+    max-width: 1216px;
+    padding: 0 8px;
     margin: 0 auto 1rem;
     margin-bottom: 8rem;
-    border-bottom: 2px solid #303235; }
+    border-bottom: 1px solid #171F3F; }
 
 .skills {
   display: -ms-grid;
@@ -375,7 +377,7 @@ template {
     grid-template-columns: 1fr 1fr;
     font-weight: normal;
     font-size: 18px;
-    line-height: 2.5rem;
+    line-height: 3.5rem;
     padding: 1rem;
     list-style-image: url("/assets/img/square.svg");
     -webkit-column-gap: 1.5rem;
@@ -386,14 +388,15 @@ template {
   background: -webkit-linear-gradient(324deg, #eaf4ff 0%, #dadcdf 100%);
   background: -o-linear-gradient(324deg, #eaf4ff 0%, #dadcdf 100%);
   background: linear-gradient(126deg, #eaf4ff 0%, #dadcdf 100%);
-  padding: 8rem 0; }
+  padding: 8rem 8px; }
   .projects__title {
     font-weight: 37.5rem;
     font-size: 2.25rem;
     line-height: 3rem;
-    max-width: 1184px;
+    max-width: 1216px;
+    padding: 0 8px;
     margin: 0 auto 1rem;
-    max-width: 1184px;
+    max-width: 1216px;
     margin: 0 auto; }
   .projects__description {
     color: #52606D;
@@ -402,6 +405,7 @@ template {
     font-size: 20px;
     line-height: 2.26rem;
     margin-bottom: 64px;
+    padding: 0 8px;
     font-weight: normal; }
 
 .cards {
@@ -432,7 +436,7 @@ template {
       color: #0593FB;
       margin-left: 50px;
       font-weight: 500;
-      font-size: 18px;
+      font-size: 1rem;
       line-height: 20px;
       text-decoration: none;
       display: inline;
@@ -470,7 +474,8 @@ template {
     font-weight: 37.5rem;
     font-size: 2.25rem;
     line-height: 3rem;
-    max-width: 1184px;
+    max-width: 1216px;
+    padding: 0 8px;
     margin: 0 auto 1rem;
     border-bottom: 1px solid;
     padding: 4rem 0 1rem; }
@@ -481,6 +486,7 @@ template {
     font-size: 20px;
     line-height: 2.26rem;
     margin-bottom: 64px;
+    padding: 0 8px;
     font-weight: normal;
     color: #eaf4ff; }
   .contact .social__content {
@@ -528,7 +534,7 @@ body {
   font-family: 'Poppins', sans-serif; }
 
 .contener {
-  max-width: 1184px;
+  max-width: 1216px;
   margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */
