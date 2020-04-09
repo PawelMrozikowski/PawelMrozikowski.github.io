@@ -5,6 +5,7 @@ $gray: rgb(48, 50, 53);
 $blue: #0593FB;
 $light-gray: #52606D;
 $max-width: 1216px;
+$mobile: 768px;
 
 @mixin title {
     font-weight: 37.5rem;
@@ -18,13 +19,12 @@ $max-width: 1216px;
 
 @mixin paragraph {
     
-    color: $light-gray;
+    color: $gray;
     max-width: 600px;
     font-weight: 300;
     font-size: 20px;
     line-height: 2.26rem;
-    margin-bottom: 64px;
-    padding: 0 8px;
+    margin-bottom: 4rem;
     font-weight: normal;
 }
 
