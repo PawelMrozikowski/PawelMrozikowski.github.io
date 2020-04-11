@@ -2,6 +2,7 @@
     background: $big-stone;
     color: $sky;
     padding-bottom: 8rem;
+    padding: 16px 8px 60px;
 
 
     &__title {
@@ -14,7 +15,7 @@
     &__description {
         @include paragraph;
         color: $sky;
-        left: -8px;
+        //margin: 0 8px;
     }
 
     .social__content {
@@ -25,8 +26,11 @@
         //align-items: center;
 
         @media (max-width: $mobile) {
-            display: grid;
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
+            align-content: space-around;
+            transform: translateX(-4rem);
+            
             
         }
     }
@@ -34,25 +38,11 @@
         //color: $sky;
         color:$sky;
         text-decoration: none;
-        position: relative;
-        
-        
-        & + & {
+        margin: 8px;
 
-                &::after {
-                    content: ' ';
-                    width: 1px;
-                    height: 18px;
-                    left: -5rem;
-                    
-                    background: $sky;
-                    position: absolute;
-                    pointer-events: none;
-                    
-        }  
-        }
-
-        &:hover {
+        
+    
+         &:hover {
             
            text-decoration: underline;
         }

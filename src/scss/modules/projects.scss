@@ -23,17 +23,28 @@
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(360px,1fr));
     gap: .5rem;
+
+    // @media (max-width:$mobile) {
+    //     margin: 0 auto;
+        
+    // }
+    
+    
 
     
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
      
     background: #ffffff;
     border-radius: 2px;
     box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+    
     
     //overflow: scroll;
 
