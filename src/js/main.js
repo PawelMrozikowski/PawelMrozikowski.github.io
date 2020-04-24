@@ -1,22 +1,35 @@
 "use strict";
 
-// service worker registration - remove if you're not going to use it
+console.log(`Miło, ze tu zaglądasz`);
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
+const list = document.querySelector('.cards--js');
 
-// place your code below
+fetch('https://api.github.com/users/PawelMrozikowski/repos')
+.then(resp => resp.json())
+.then(resp => {
+    const repos = resp;
+    for(const repo of repos){
+        const{description, homepage, html_url, name}= repo;
+        console.log(repo);
+    list.innerHTML +=`
+    <div class="card">
+            <img class="card__icon" src="assets/img/card_icon.svg" alt="github_icon.">
 
+            <h4 class="card__header">${name} </h4>
+            <p class="card__paragraph">${description} - ${homepage} </p>
 
-console.log(`Hello world!`);
+            <div class="card__footer">
+              <a class="card__footer-link" href="${homepage}" target="_blank" rel="nofollow noreferrer" title="Demo: ${name}">Demo ></a>
+              <a class="card__footer-link card__footer-link--source" href="${html_url}" target="_blank" rel="nofollow noreferrer" title="Source code: ${name}">GitHub ></a>
+            </div>
+          </div>`
+    
+    
+    
+    
+    // <li class="list__item"><a href class="list__link" ="${url}"></a>
+    // <p class="list__description">${description ? description : "brak opisu"} </p></li>`;
+    }
+});
 
 

@@ -23,7 +23,7 @@
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px,1fr));
     gap: .5rem;
 
     // @media (max-width:$mobile) {
@@ -40,6 +40,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
      
     background: #ffffff;
     border-radius: 2px;
@@ -64,7 +65,7 @@
     &__footer {
         height: 4rem;
         background: #f5f7fa;
-        padding: 1rem 3rem;
+        padding: 1rem 1.5rem;
         text-align: right;
 
         
@@ -96,7 +97,7 @@
            
     
                 &::before {
-                content:'';
+                content:' ';
                 display: inline-block;
                 
                 padding: 12px;
@@ -113,6 +114,7 @@
             }
 
             &:hover {
+            
                 border-bottom: 1px solid $blue;
                 font-style: italic;
                 

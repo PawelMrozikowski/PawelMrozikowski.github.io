@@ -431,7 +431,7 @@ template {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: .5rem; }
 
 .card {
@@ -458,7 +458,7 @@ template {
   .card__footer {
     height: 4rem;
     background: #f5f7fa;
-    padding: 1rem 3rem;
+    padding: 1rem 1.5rem;
     text-align: right; }
     .card__footer-link {
       color: #0593FB;
@@ -478,7 +478,7 @@ template {
         left: -2rem;
         pointer-events: none; }
       .card__footer-link::before {
-        content: '';
+        content: ' ';
         display: inline-block;
         padding: 12px;
         margin-right: 4px;
