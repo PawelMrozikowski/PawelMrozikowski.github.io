@@ -16,7 +16,7 @@ fetch('https://api.github.com/users/PawelMrozikowski/repos')
             <img class="card__icon" src="assets/img/card_icon.svg" alt="github_icon.">
 
             <h4 class="card__header">${name} </h4>
-            <p class="card__paragraph">${description} - ${homepage} </p>
+            <p class="card__paragraph">${description}</p>
 
             <div class="card__footer">
               <a class="card__footer-link" href="${homepage}" target="_blank" rel="nofollow noreferrer" title="Demo: ${name}">Demo ></a>
