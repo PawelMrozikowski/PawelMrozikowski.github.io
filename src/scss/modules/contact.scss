@@ -1,15 +1,13 @@
 .contact {
-    background: $big-stone;
+    background: #1a202d;
     color: $sky;
     padding-bottom: 8rem;
     padding: 16px 8px 60px;
-
 
     &__title {
         @include title;
         border-bottom: 1px solid;
         padding: 4rem 0 1rem;
-     
     }
 
     &__description {
@@ -21,8 +19,10 @@
     .social__content {
         font-size: 1.25rem;
         margin: 0 8rem;
-        display:flex;
+        display: flex;
         justify-content: space-between;
+        
+        
         //align-items: center;
 
         @media (max-width: $mobile) {
@@ -30,33 +30,16 @@
             flex-direction: column;
             align-content: space-around;
             transform: translateX(-4rem);
-            
-            
         }
     }
-    &__me  {
+    &__me {
         //color: $sky;
-        color:$sky;
+        color: $sky;
         text-decoration: none;
         margin: 8px;
 
-        
-    
-         &:hover {
-            
-           text-decoration: underline;
+        &:hover {
+            text-decoration: underline;
         }
-
-
     }
-        }
-
-    
-
-        
-
-
-    
-    
-
-
+}

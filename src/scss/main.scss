@@ -1,49 +1,43 @@
 @import "_normalize";
 @import "_variables";
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext");
 
 @import "modules/header.scss";
 @import "modules/skills.scss";
 @import "modules/projects.scss";
 @import "modules/contact.scss";
 
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  @media (max-width: $mobile){
+  @media (max-width: $mobile) {
     font-size: 12px;
   }
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
   font-size: 16px;
-  border: 16px solid $big-stone;
-  background: rgb(250,250,250);
-  background: linear-gradient(180deg, rgba(250,250,250,1) 91%, rgba(134,149,176,1) 100%);
+  //border: 8px solid $big-stone;
+  background: rgb(250, 250, 250);
+  background: linear-gradient(180deg, rgba(250, 250, 250, 1) 91%, rgba(134, 149, 176, 1) 100%);
   color: $big-stone;
-  font-family: 'Poppins', sans-serif;
-  
-  
+  font-family: "Poppins", sans-serif;
 
-//   wp-mix.com
-//   -webkit-font-smoothing: antialiased;
-// 	-moz-osx-font-smoothing: antialiased;
-// 	font-smoothing: antialiased;
+  //   wp-mix.com
+  //   -webkit-font-smoothing: antialiased;
+  // 	-moz-osx-font-smoothing: antialiased;
+  // 	font-smoothing: antialiased;
 
-
-@media (max-width: $mobile){
-  border: none;
-  
+  @media (max-width: $mobile) {
+    border: none;
+  }
 }
-}
-
-
-
 
 .contener {
   max-width: $max-width;
