@@ -1,4 +1,19 @@
-# wtf-gulp-starter
+![My personal webside](src/assets/img/cover.png)
+
+# Personal webside by Paweł Mrozikowski
+
+#### It's my webside CV where I added my another projects.
+
+## Tools and technology:
+- Visual Studio Code
+- Fetch API
+- Grid / Flex
+- Sass
+- BEM 
+- Gulp
+- Open Graph
+### wtf-gulp-starter
+
 
 `npm install -g gulp-cli`
 
